@@ -1,0 +1,5 @@
+source 'http://api.berkshelf.com'
+
+metadata
+
+cookbook 'compat_resource', path: '../compat_resource'

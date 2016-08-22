@@ -1,0 +1,85 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04-chef-12.0.3
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.0.3
+  - name: ubuntu-14.04-chef-12.1.2
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.1.2
+  - name: ubuntu-14.04-chef-12.2.1
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.2.1
+  - name: ubuntu-14.04-chef-12.3.0
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.3.0
+  - name: ubuntu-14.04-chef-12.4.1
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.4.1
+  - name: ubuntu-14.04-chef-12.5.1
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.5.1
+  - name: ubuntu-14.04-chef-12.6.0
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.6.0
+  - name: ubuntu-14.04-chef-12.7.2
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.7.2
+  - name: ubuntu-14.04-chef-12.8.1
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.8.1
+  - name: ubuntu-14.04-chef-12.9.41
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.9.41
+  - name: ubuntu-14.04-chef-12.10.24
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.10.24
+  - name: ubuntu-14.04-chef-12.11.18
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.11.18
+  - name: ubuntu-14.04-chef-12.12.15
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.12.15
+  - name: ubuntu-14.04-chef-12.13.37
+    driver:
+      box: bento/ubuntu-14.04
+    provisioner:
+      require_chef_omnibus: 12.13.37
+  #- name: centos-7.2
+
+suites:
+  - name: multi-delayed
+    run_list:
+      - recipe[multi_delayed_call::default]
+    attributes:

@@ -1,0 +1,3 @@
+[submodule "cookbooks/compat_resource"]
+	path = cookbooks/compat_resource
+	url = https://github.com/chef-cookbooks/compat_resource.git
